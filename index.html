@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+
+                <ul>
+                    <li class="hideonmobile"><a href="#"><b>StudyMate</b></a></li>
+                    <li class="hideonmobile"><a href="#">Blog</a></li>
+                    <li class="hideonmobile"><a href="#">Products</a></li>
+                    <li class="hideonmobile"><a href="#">About</a></li>
+                    <li class="hideonmobile"><a href="#">Forum</a></li>
+                    <li class="hideonmobile"><a href="#">Login</a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <section class="hero">
+                    <div class="container">
+                        <h1>Convert Your Notes into Interactive Study Materials</h1>
+                        <p>To Streamline Success in Every Note</p>
+                    </div>
+
+                    <div class="register">
+                        <button class="button" onclick="redirectToSignup()">
+                            Register Now
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+                <script>
+                    function redirectToSignup() {
+                        window.location.href = 'Registration/main.html';
+                    }
+                </script>
+
+                <section>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="beforeClass.png" alt="Before Class" width="80" height="50" class="w-full">
+                            <h3 class="font-semibold mb-2">Create Questions</h3>
+
+                        </div>
+                        <div class="card">
+                            <img src="onClass.png" alt="On Class" width="80" height="50" class="w-full">
+                            <h3 class="font-semibold mb-2">Make Learning Fun and Effective</h3>
+
+                        </div>
+                        <div class="card">
+                            <img src="afterClass.png" alt="After Class" width="80" height="50" class="w-full">
+                            <h3 class="font-semibold mb-2">Generate Quizzes</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pricing-section">
+                    <h1>Simple pricing, for everyone.</h1>
+                    <div class="pricing-cards">
+                        <!-- Free Plan -->
+                        <div class="card">
+                            <h2>$0</h2>
+                            <h3>Free</h3>
+                            <p>Suitable for individuals getting started.</p>
+                            <button class="btn">Get started</button>
+                            <ul>
+                                <li>✅ 10 MCQ's and 5 Q/A</li>
+                            </ul>
+                        </div>
+
+                        <!-- Basic Plan -->
+                        <div class="card featured">
+                            <h2>$14</h2>
+                            <h3>Basic</h3>
+                            <p>Perfect for users with basic requirements such as students.</p>
+                            <button class="btn">Get started</button>
+                            <ul>
+                                <li>✅ 50 MCQ's and 20 Q/A</li>
+                            </ul>
+                        </div>
+
+                        <!-- Professional Plan -->
+                        <div class="card">
+                            <h2>$32</h2>
+                            <h3>Professional</h3>
+                            <p>Best for teachers and institutions.</p>
+                            <button class="btn">Get started</button>
+                            <ul>
+                                <li>✅ 100 MCQ's and 50 Q/A</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>StudyMate</h4>
+                        <p>AI-powered quiz generation for everyone.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#fileupload">File Upload</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                data-cfemail="cfbcbabfbfa0bdbb8fbcbbbaabb6a2aebbaae1aca0a2">[email&#160;protected]</a>
+                        </p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 StudyMate. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
